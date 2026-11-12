@@ -1,6 +1,6 @@
 # Awesome-Contract-Audit-Logging-Traceability
 
-# Top Contract Audit Logging & Traceability Ecosystem
+## Top Contract Audit Logging & Traceability Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Immutable Audit Trails, Version History & Tamper-Evident Compliance Evidence*  
