@@ -1,0 +1,168 @@
+<svg width="100%" height="240" viewBox="0 0 1200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.1" />
+    </linearGradient>
+
+    <radialGradient id="glow1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <style>
+      .bg-glow {
+        animation: pulseGlow 6s ease-in-out infinite alternate;
+      }
+      .node-pulse {
+        animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+      .flow-dash {
+        stroke-dasharray: 8 6;
+        animation: flowMove 20s linear infinite;
+      }
+      .pill-float {
+        animation: floatPill 5s ease-in-out infinite alternate;
+      }
+      @keyframes pulseGlow {
+        0% { opacity: 0.6; transform: scale(0.98); }
+        100% { opacity: 1; transform: scale(1.02); }
+      }
+      @keyframes flowMove {
+        from { stroke-dashoffset: 200; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes floatPill {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-5px); }
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 34px;
+        letter-spacing: -0.5px;
+        fill: #ffffff;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        fill: #94a3b8;
+      }
+      .badge-label {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        fill: #38bdf8;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="240" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Glows (strictly background) -->
+  <circle cx="200" cy="80" r="260" fill="url(#glow1)" class="bg-glow" />
+  <circle cx="1020" cy="160" r="280" fill="url(#glow2)" class="bg-glow" />
+
+  <!-- Subtle Audit Ledger Grid Patterns -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="240" />
+    <line x1="300" y1="0" x2="300" y2="240" />
+    <line x1="500" y1="0" x2="500" y2="240" />
+    <line x1="700" y1="0" x2="700" y2="240" />
+    <line x1="900" y1="0" x2="900" y2="240" />
+    <line x1="1100" y1="0" x2="1100" y2="240" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+  </g>
+
+  <!-- Dynamic Animated Traceability Flow Curves in background -->
+  <path d="M 650 180 C 780 130, 880 210, 1060 120" fill="none" stroke="url(#lineGrad)" stroke-width="2.5" class="flow-dash" />
+  <path d="M 720 70 C 850 120, 930 40, 1140 100" fill="none" stroke="url(#lineGrad)" stroke-width="1.8" stroke-opacity="0.6" class="flow-dash" />
+
+  <!-- Verification Ledger Decorative Card (Right side, non-overlapping) -->
+  <g transform="translate(850, 48)" filter="url(#cardShadow)" opacity="0.95" class="pill-float">
+    <rect width="290" height="144" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+    <!-- Card Header -->
+    <circle cx="24" cy="24" r="5" fill="#ef4444" />
+    <circle cx="38" cy="24" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="24" r="5" fill="#10b981" />
+    <text x="75" y="28" font-family="monospace" font-size="11" fill="#64748b">audit-chain.verify()</text>
+    <line x1="12" y1="42" x2="278" y2="42" stroke="#334155" stroke-width="1" />
+    
+    <!-- Code / Audit Lines -->
+    <text x="20" y="65" font-family="monospace" font-size="11" fill="#38bdf8">▶ SHA-256 Hash Chained</text>
+    <text x="20" y="85" font-family="monospace" font-size="11" fill="#a7f3d0">✔ Signature: Verified [eIDAS]</text>
+    <text x="20" y="105" font-family="monospace" font-size="11" fill="#cbd5e1">ℹ Status: Tamper-Evident</text>
+    <text x="20" y="125" font-family="monospace" font-size="10" fill="#94a3b8"># Append-only ledger sealed</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header Category Tag -->
+  <g transform="translate(60, 42)">
+    <rect width="215" height="26" rx="13" fill="#0369a1" fill-opacity="0.3" stroke="#0284c7" stroke-width="1" />
+    <circle cx="14" cy="13" r="4" fill="#38bdf8" />
+    <text x="28" y="17" class="badge-label">ENTERPRISE AUDIT &amp; COMPLIANCE</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Main Title -->
+  <g transform="translate(60, 108)">
+    <text class="title-text">
+      Contract Audit Logging <tspan fill="url(#accentGrad)">&amp; Traceability</tspan>
+    </text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Subtitle & Value Proposition -->
+  <g transform="translate(60, 142)">
+    <text class="subtitle-text">
+      Curated ecosystem of SaaS &amp; Open-Source platforms for immutable audit trails,
+    </text>
+    <text y="22" class="subtitle-text">
+      version history, cryptographic evidence, and SOX / HIPAA / GDPR compliance.
+    </text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Quick Feature Badges -->
+  <g transform="translate(60, 192)">
+    <g transform="translate(0, 0)">
+      <rect width="138" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">🛡️ Tamper-Evident</text>
+    </g>
+    <g transform="translate(148, 0)">
+      <rect width="155" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">📜 Immutable Ledgers</text>
+    </g>
+    <g transform="translate(313, 0)">
+      <rect width="168" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="16" font-family="sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">⚖️ Defensible Evidence</text>
+    </g>
+  </g>
+</svg>
