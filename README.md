@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability?style=flat-square&color=blue" alt="Stars Badge"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability?style=flat-square&color=blue" alt="Stars_Badge"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability?style=flat-square&color=blue" alt="Forks Badge"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Contract-Audit-Logging-Traceability/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="License"/></a>
@@ -64,9 +64,9 @@ Below is a comparative breakdown of category-leading SaaS solutions offering nat
 
 ## 💻 Open-Source GitHub Projects
 
-Explore these vetted open-source projects for self-hosted audit logging, document version control, digital signature verification, and tamper-evident cryptographic ledgers. Entries are sorted descending by GitHub star count.
+Explore these vetted open-source projects for self-hosted audit logging, document version control, digital signature verification, and tamper-evident cryptographic ledgers. Entries are sorted descending by GitHub Stars_Count.
 
-| Project 📦 | Stars ⭐ | Description 📝 | Primary Use Case 🎯 | License 📜 |
+| Project 📦 | GitHub_Stars ⭐ | Description 📝 | Primary Use Case 🎯 | License 📜 |
 |:---|:---|:---|:---|:---|
 | **[docuseal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | Open-source platform for creating, signing, and processing digital contracts and PDF documents. Embeds cryptographic signatures, completion certificates, and timestamped audit logs for all signer actions. | Self-hosted DocuSign alternative & signed agreement audit trail | AGPL-3.0 |
 | **[immudb](https://github.com/codenotary/immudb)** | [![Stars](https://img.shields.io/github/stars/codenotary/immudb?style=social&color=white)](https://github.com/codenotary/immudb/stargazers) | Immutable zero-trust database with cryptographic proof of data integrity. Provides cryptographic verification, history of all state changes, and Merkle-tree tamper-evident ledgers for legal documents and audit events. | Cryptographic tamper-proof backend for contract state & audit events | Apache-2.0 |
